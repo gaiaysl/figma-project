@@ -505,16 +505,16 @@ const callouts = [
   
             <div className="mt-6 space-y-12 lg:grid  lg:gap-x-6 lg:space-y-0">
               {callouts.map((callout) => (
-                <div  className=" h-80 w-full overflow-hidden rounded-lg bg-white group-hover:opacity-75 sm:aspect-w-2 sm:aspect-h-1 sm:h-64 lg:aspect-w-1 lg:aspect-h-1" >
+                <div  className=" h-80 w-full  overflow-hidden rounded-lg bg-white group-hover:opacity-75 sm:aspect-w-2 sm:aspect-h-1 sm:h-64 lg:aspect-w-1 lg:aspect-h-1" >
 
-                  <h3 className="mt-6 text-sm font-bold text-black">
+                  <h3 className="  font-bold text-black">
                     <a href={callout.href}>
                       <span />
                       {callout.name}
                     </a>
                   </h3>
                   <p className="font-light text-gray-600">{callout.description}</p>
-                  <span className="flex  ">{callout.svg}</span>
+                  <span className="flex flex-row-reverse object-cover  ">{callout.svg}</span>
                 </div>
               ))}
             </div>
