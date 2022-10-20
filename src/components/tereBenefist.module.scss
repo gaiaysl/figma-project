@@ -1,0 +1,13 @@
+.content{
+    @apply bg-gray-100
+}
+
+.container{
+    @apply bg-gray-100 
+}
+.titleDiv{
+    @apply text-2xl font-bold text-center
+}
+.title{@apply text-2xl font-bold text-green-600}
+.card{
+    @apply h-60 w-full  overflow-hidden rounded-lg bg-white  }
