@@ -12,6 +12,7 @@
   }
   ```
 */
+import styles from './tereBenefist.module.scss'
 const callouts = [
     {
       name: 'Flexibleworking hours',
@@ -498,22 +499,26 @@ const callouts = [
   
   export default function TereBenefist() {
     return (
-      <div className="bg-gray-100">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="mx-auto max-w-2xl py-16 sm:py-24 lg:max-w-none lg:py-32">
-            <h2 className="text-2xl font-bold text-gray-900">TERE BENEFIST</h2>
+      <div className={styles.content}>
+        <div className="continer">
+          <div className={styles.container}>
+            <h2 className={styles.titleDiv}>
+              <span  className={styles.title} >TERE </span>
+               BENEFIST</h2>
   
-            <div className="mt-6 space-y-12 lg:grid  lg:gap-x-6 lg:space-y-0">
+            <div className="bg-red-500 mb-12">
               {callouts.map((callout) => (
-                <div  className=" h-80 w-full  overflow-hidden rounded-lg bg-white group-hover:opacity-75 sm:aspect-w-2 sm:aspect-h-1 sm:h-64 lg:aspect-w-1 lg:aspect-h-1" >
-
+                <div  className={styles.card} >
+                  <div classname="bg-red-100">
                   <h3 className="  font-bold text-black">
                     <a href={callout.href}>
                       <span />
                       {callout.name}
                     </a>
                   </h3>
-                  <p className="font-light text-gray-600">{callout.description}</p>
+                  </div>
+                  <p className="font-light text-gray-600 flex flex-column">{callout.description}</p>
+                 
                   <span className="flex flex-row-reverse object-cover  ">{callout.svg}</span>
                 </div>
               ))}
@@ -521,6 +526,7 @@ const callouts = [
           </div>
         </div>
       </div>
+
     )
   }
   

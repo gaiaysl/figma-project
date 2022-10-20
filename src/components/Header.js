@@ -220,13 +220,13 @@ Lets ride together
   
                 <a
                   href="#"
-                  className="inline-block rounded-md border border-transparent bg-black py-3 px-8 text-center font-medium text-white hover:bg-indigo-700"
+                  className="inline-block rounded-md border border-transparent bg-black py-3 px-8 text-center font-medium text-white hover:bg-gray-700 m-3"
                 >
                  DOWNLOAD
                 </a>
                 <a
                   href="#"
-                  className="inline-block rounded-md border border-transparent bg-black py-3 px-8 text-center font-medium text-white hover:bg-indigo-700"
+                  className="inline-block rounded-md border border-transparent bg-black py-3 px-8 text-center font-medium text-white hover:bg-gray-700"
                 >
                  DOWNLOAD
                 </a>
