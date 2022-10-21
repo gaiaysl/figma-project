@@ -15,7 +15,7 @@ function classNames(...classes) {
 
 export default function Navbar() {
   return (
-    <Disclosure as="nav" className="bg-white flex justify-between m-12">
+    <Disclosure as="nav" className="bg-gray-100 flex justify-between m-12">
       {({ open }) => (
         <>
         
@@ -47,7 +47,7 @@ export default function Navbar() {
                         key={item.name}
                         href={item.href}
                         className={classNames(
-                          item.current ? 'bg-green-900 text-white' : 'text-black hover:bg-gray-700 hover:text-white',
+                          'text-black hover:bg-gray-700 hover:text-white',
                           'px-3 py-2 rounded-md text-sm font-medium'
                         )}
                         aria-current={item.current ? 'page' : undefined}

@@ -500,26 +500,26 @@ const callouts = [
   export default function TereBenefist() {
     return (
       <div className={styles.content}>
-        <div className="continer">
+        <div className={styles.contentTwo}>
           <div className={styles.container}>
             <h2 className={styles.titleDiv}>
               <span  className={styles.title} >TERE </span>
                BENEFIST</h2>
   
-            <div className="bg-red-500 mb-12">
+            <div className="">
               {callouts.map((callout) => (
                 <div  className={styles.card} >
-                  <div classname="bg-red-100">
-                  <h3 className="  font-bold text-black">
+                  <div classname={styles.cardTwo}>
+                  <h3 className={styles.h3}>
                     <a href={callout.href}>
                       <span />
                       {callout.name}
                     </a>
                   </h3>
                   </div>
-                  <p className="font-light text-gray-600 flex flex-column">{callout.description}</p>
+                  <p className={styles.description}>{callout.description}</p>
                  
-                  <span className="flex flex-row-reverse object-cover  ">{callout.svg}</span>
+                  <span className={styles.photo}>{callout.svg}</span>
                 </div>
               ))}
             </div>

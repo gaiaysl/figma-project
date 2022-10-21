@@ -1,24 +1,9 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-      monospace;
-  }
 
-a {
-  color: inherit;
-  text-decoration: none;
+html{
+    background-color:#F3F4F6;
+    margin: 25px;
 }
-
-* {
-  box-sizing: border-box;
-}
-
