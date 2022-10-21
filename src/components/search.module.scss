@@ -1,0 +1,17 @@
+.container{
+    @apply bg-green-400
+}
+.content{
+    @apply flex justify-center gap-1.5 py-12 px-4 sm:px-6 lg:flex lg:items-center  lg:py-16 lg:px-8
+}
+.contentTwo{
+    @apply flex  justify-center gap-1.5 py-12 px-4 sm:px-6 lg:flex lg:items-center  lg:py-16 lg:px-8
+}
+.text{
+    @apply text-white
+}
+
+.input{
+    @apply h-10 w-72
+
+}
